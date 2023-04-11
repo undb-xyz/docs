@@ -1,6 +1,6 @@
 export const SITE = {
-  title: 'Documentation',
-  description: 'Your website description.',
+  title: 'undb',
+  description: 'undb documentation',
   defaultLanguage: 'en-us',
 } as const
 
@@ -18,9 +18,9 @@ export const KNOWN_LANGUAGES = {
 } as const
 export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES)
 
-export const GITHUB_EDIT_URL = `https://github.com/withastro/astro/tree/main/examples/docs`
+export const GITHUB_EDIT_URL = `https://github.com/undb-xyz/docs/tree/main`
 
-export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
+export const COMMUNITY_INVITE_URL = ''
 
 // See "Algolia" section of the README for more information.
 export const ALGOLIA = {
@@ -32,11 +32,12 @@ export const ALGOLIA = {
 export type Sidebar = Record<(typeof KNOWN_LANGUAGE_CODES)[number], Record<string, { text: string; link: string }[]>>
 export const SIDEBAR: Sidebar = {
   en: {
-    'Section Header': [
-      { text: 'Introduction', link: 'en/introduction' },
-      { text: 'Page 2', link: 'en/page-2' },
-      { text: 'Page 3', link: 'en/page-3' },
+    'Get Started': [{ text: 'Introduction', link: 'en/introduction' }],
+    Installation: [
+      { text: 'docker', link: 'en/installation-with-docker' },
+      { text: 'docker-compose', link: 'en/installation-with-docker-compose' },
+      { text: 'Render.com ', link: 'en/installation-with-render' },
     ],
-    'Another Section': [{ text: 'Page 4', link: 'en/page-4' }],
+    Contribution: [{ text: 'development', link: 'en/development' }],
   },
 }

@@ -1,0 +1,34 @@
+---
+title: 'Installation with docker compose'
+description: 'learn how to deploy / install undb with docker compose command'
+---
+
+Learn how to deploy `undb` with a simple docker compose command
+
+## run undb with docker compose
+
+to run undb with docker compose, you should create a `docker-compose.yaml` file like this:
+
+```yaml
+version: '3.0'
+services:
+  undb:
+    image: ghcr.io/undb-xyz/undb:latest
+    container_name: undb
+    volumes:
+      - ~/.undb/:/var/opts/.undb
+    ports:
+      - 4000:4000
+```
+
+and then run `docker-compose up` to get undb started
+
+```bash
+docker-compose up -d
+```
+
+The command above will run undb in the background and expose port `4000`, and you can visit `http://localhost:4000` and get started
+
+## Volumes
+
+Note that `undb` data will be saved in `~/.undb/` on your local machine
