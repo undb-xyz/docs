@@ -7,7 +7,7 @@ description: 'Docs intro'
 
 Private first, unified, self-hosted no code database.
 
-![undb](/undb.png)
+![undb](/undb.webp)
 
 - 🔐 **Private first**
 - 🎈 **Light weight, requires just one file storage by default**

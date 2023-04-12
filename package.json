@@ -1,5 +1,5 @@
 {
-  "name": "www",
+  "name": "docs",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,15 +11,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@algolia/client-search": "^4.13.1",
     "@astrojs/solid-js": "^2.1.0",
-    "@docsearch/css": "^3.1.0",
-    "@docsearch/react": "^3.1.0",
     "@types/node": "^18.0.0",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
     "astro": "^2.2.1",
-    "preact": "^10.7.3",
     "solid-js": "^1.4.3"
   },
   "devDependencies": {
