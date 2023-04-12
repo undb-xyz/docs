@@ -4,6 +4,7 @@
     "jsx": "preserve",
     "skipLibCheck": true,
     "verbatimModuleSyntax": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "jsxImportSource": "solid-js"
   }
 }

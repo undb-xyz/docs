@@ -1,25 +1,28 @@
 import type { MarkdownHeading } from 'astro'
-import type { FunctionalComponent } from 'preact'
 import { unescape } from 'html-escaper'
-import { useState, useEffect, useRef } from 'preact/hooks'
+import { createSignal, type Component, createEffect, For } from 'solid-js'
 
 type ItemOffsets = {
   id: string
   topOffset: number
 }
 
-const TableOfContents: FunctionalComponent<{ headings: MarkdownHeading[] }> = ({ headings = [] }) => {
-  const toc = useRef<HTMLUListElement>()
+const TableOfContents: Component<{ headings: MarkdownHeading[] }> = ({ headings = [] }) => {
   const onThisPageID = 'on-this-page-heading'
-  const itemOffsets = useRef<ItemOffsets[]>([])
-  const [currentID, setCurrentID] = useState('overview')
-  useEffect(() => {
+  const [headingsSignal] = createSignal([...headings], { equals: false })
+  const filtered = () => headingsSignal().filter(({ depth }) => depth > 1 && depth < 4)
+  const [, setItemOffsets] = createSignal<ItemOffsets[]>([])
+  const [currentID, setCurrentID] = createSignal<string>('overview', { equals: false })
+
+  createEffect(() => {
     const getItemOffsets = () => {
       const titles = document.querySelectorAll('article :is(h1, h2, h3, h4)')
-      itemOffsets.current = Array.from(titles).map((title) => ({
-        id: title.id,
-        topOffset: title.getBoundingClientRect().top + window.scrollY,
-      }))
+      setItemOffsets(
+        Array.from(titles).map((title) => ({
+          id: title.id,
+          topOffset: title.getBoundingClientRect().top + window.scrollY,
+        }))
+      )
     }
 
     getItemOffsets()
@@ -28,11 +31,9 @@ const TableOfContents: FunctionalComponent<{ headings: MarkdownHeading[] }> = ({
     return () => {
       window.removeEventListener('resize', getItemOffsets)
     }
-  }, [])
+  })
 
-  useEffect(() => {
-    if (!toc.current) return
-
+  createEffect(() => {
     const setCurrent: IntersectionObserverCallback = (entries) => {
       for (const entry of entries) {
         if (entry.isIntersecting) {
@@ -58,31 +59,31 @@ const TableOfContents: FunctionalComponent<{ headings: MarkdownHeading[] }> = ({
 
     // Stop observing when the component is unmounted.
     return () => headingsObserver.disconnect()
-  }, [toc.current])
+  })
 
-  const onLinkClick = (e) => {
+  const onLinkClick = (e: any) => {
     setCurrentID(e.target.getAttribute('href').replace('#', ''))
   }
 
   return (
     <>
-      <h2 id={onThisPageID} className="heading">
+      <h2 id={onThisPageID} class="heading">
         On this page
       </h2>
-      <ul ref={toc}>
-        {headings
-          .filter(({ depth }) => depth > 1 && depth < 4)
-          .map((heading) => (
+      <ul>
+        <For each={filtered()}>
+          {(heading) => (
             <li
-              className={`header-link depth-${heading.depth} ${
-                currentID === heading.slug ? 'current-header-link' : ''
+              class={`header-link depth-${heading.depth} ${
+                currentID() === heading.slug ? 'current-header-link' : ''
               }`.trim()}
             >
               <a href={`#${heading.slug}`} onClick={onLinkClick}>
                 {unescape(heading.text)}
               </a>
             </li>
-          ))}
+          )}
+        </For>
       </ul>
     </>
   )
