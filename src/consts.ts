@@ -38,6 +38,12 @@ export const SIDEBAR: Sidebar = {
       { text: 'docker-compose', link: 'en/installation-with-docker-compose' },
       { text: 'Render.com ', link: 'en/installation-with-render' },
     ],
+    Feature: [
+      { text: 'Tables', link: 'en/tables' },
+      { text: 'Fields', link: 'en/fields' },
+      { text: 'Field Configuration Options', link: 'en/field-configuration-options' },
+      { text: 'Field Types', link: 'en/field-types' },
+    ],
     Contribution: [{ text: 'development', link: 'en/development' }],
   },
 }
