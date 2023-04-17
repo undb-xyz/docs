@@ -6,16 +6,44 @@ title: 'Field Types'
 
 **Basic table field types are the different data types that can be stored in a table, such as text, numbers, and dates, and are used to classify and manage data effectively.**
 
+| Field type |                                                                                                                                Description |
+| ---------- | -----------------------------------------------------------------------------------------------------------------------------------------: |
+| String     |                                                                               The String field type stores text values of varying lengths. |
+| Email      |                                                                        The email field type in a table is used for storing email addresses |
+| Attachment |        The attachment field type in a table is used for storing files, such as documents or images, that are related to a specific record. |
+| Color      | The Color field type in a table helps identify and group related records, and can be used for visualizing data and customization purposes. |
+| Bool       |              Booleans have only two options, like "True" or "False", and are useful for indicating binary data such as fulfillment status. |
+| Number     |                                                 Number field type stores numbers and is handy for math operations, filtering, and sorting. |
+| Rating     |                             Rating field collects user opinions with a scale (e.g. 1-10 stars) for analyzing satisfaction and preferences. |
+| Date       |                                           Date field schedules and tracks time by storing and displaying deadlines, due dates, and events. |
+| Date Range |                                                                 Date Range field tracks project duration in a table for sorting/filtering. |
+| Select     |                                                         Select field provides drop-down menu for precise data selection and easy analysis. |
 
-|  Field type      | Description |
-| -----------------| ----------: |
-| String           | The String field type is used for storing sequences of characters that make up text or alphanumeric values of varying lengths, such as names or descriptions. It is useful for sorting, searching, and filtering data in a table.|
-| Email            | The email field type in a table is used for storing email addresses |
-| Attachment       | The attachment field type in a table is used for storing files, such as documents or images, that are related to a specific record.|
-| Color            | The Color field type in a table helps identify and group related records, and can be used for visualizing data and customization purposes.|
-| Bool             | Boolean fields offer users a way to choose between only two options, commonly "True" or "False", and are useful for representing binary data such as fulfillment status.|
-| Number           | The Number field type in a table is used for storing numerical data, such as quantity, price, or age. It can be used for calculations, filtering, and sorting purposes.|
-| Rating           | The Rating field in a table is used to collect user opinions on a scale, such as 1-10 stars. It can help analyze user satisfaction and preferences.|
-| Date             | The Date field is used for scheduling and time management in a table, allowing you to store and display deadlines, due dates, and event dates.|
-| Date Range       | The Date Range field in a table captures a range of dates, like a project or vacation duration, and helps to sort and filter by date. It's important for tracking larger time frames in a table.|
-| Select           | A Select field provides a drop-down menu for users to select a predefined value as table data, making input more accurate and analysis easier.|
+## System
+
+**The system field in a Smartsheet functions to record system information, including the creation and modification times, the creator and modifier's names, etc. Users can check this field to get insights into the creation, modification history, and other related system information of a sheet.**
+
+| Field Types   |                                                                                                      Description |
+| ------------- | ---------------------------------------------------------------------------------------------------------------: |
+| AutoIncrement | AutoIncrement field in Smartsheet automatically assigns unique numbers to new rows and can't be manually edited. |
+| Collaborator  |                                        Assign collaborators by selecting names from a list of workspace members. |
+
+## Reference
+
+| Field Types |                                                                                              Description |
+| ----------- | -------------------------------------------------------------------------------------------------------: |
+| reference   |                                   Reference column links Smartsheet sheets for sharing and syncing data. |
+| Tree        | Smartsheet's Tree column supports hierarchical row organization with summary totals and multiple levels. |
+
+**You can refer to [Reference fields](./reference-fields) for information on how to use Reference field types.**
+
+## Lookup
+
+| Field Types |                                                                 Description |
+| ----------- | --------------------------------------------------------------------------: |
+| Lookup      |     You can look for a specific field in a linked row using a lookup field. |
+| Count       |           Used to calculate the number of elements in a list or collection. |
+| Sum         |                    Used to calculate the total of a list or set of numbers. |
+| Average     | A function used to calculate the average value of a list or set of numbers. |
+
+**Learn more about [Lookup fields](./lookup-fields)**

@@ -23,3 +23,5 @@ description: ''
 **To add a new field, you can either use the '+' button at the end of the table or insert a new field between existing fields. You can select a field and either insert a new field to the left or right of that field. Learn more about reordering and moving fields.**
 
 ![insert-field](/images/insert-field.png)
+
+In Undb, each [field can be configured](./field-configuration-options.md) to fit your use case. You can sort, filter, and hide the columns in a particular view without affecting other views in the table.

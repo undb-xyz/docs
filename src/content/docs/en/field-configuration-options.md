@@ -24,7 +24,7 @@ title: 'Field configuration options'
 **To Update a field**
 
 1. Click on the dropdown icon next to the field you want to edit.
-2. Select 'Update Field'
+2. Select 'Update Field'.
 3. Update the field type or field name in the 'Update field' modal.
 4. Click the 'Update' button when all desired changes are made.
 
@@ -44,15 +44,15 @@ title: 'Field configuration options'
 
 **To create a filter**
 
-1. Click the filter button
+1. Click the filter button.
 2. Select the field from the dropdown menu in the Filter modal.
-3. Create filter
+3. Create filter.
 
 ![create-filter](/images/create-filter.gif)
 
 ## Hide field
 
-**Hiding fields from the field header**
+**Hiding fields from the field header.**
 
 **By clicking the field header in grid view and choosing the Hide field option from the dropdown menu, you can also hide a field.**
 
@@ -64,7 +64,7 @@ title: 'Field configuration options'
 
 ## Delete field
 
-**To delete a field**
+**To delete a field.**
 
 **You can do it by selecting the Delete field option from the dialog box beside the field s name.**
 
@@ -72,3 +72,5 @@ title: 'Field configuration options'
 2. Select Delete field.
 
 ![delete-field](/images/delete-field.png)
+
+> Note that currently the deleted field cannot be recovered.

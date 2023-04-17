@@ -43,6 +43,8 @@ export const SIDEBAR: Sidebar = {
       { text: 'Fields', link: 'en/fields' },
       { text: 'Field Configuration Options', link: 'en/field-configuration-options' },
       { text: 'Field Types', link: 'en/field-types' },
+      { text: 'Reference Fields', link: 'en/reference-fields' },
+      { text: 'lookup Fields', link: 'en/lookup-fields' },
     ],
     Contribution: [{ text: 'development', link: 'en/development' }],
   },

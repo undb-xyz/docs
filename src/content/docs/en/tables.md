@@ -44,3 +44,5 @@ Tables Overview
 - Click on the dropdown button located to the right of the table name in the top navigation bar, and then select the 'Delete Table' option
 
 - Click on the 'More' icon in the top-right corner of the 'Update Table' drawer, and then select the option to delete the table.
+
+> Note that currently the deleted table cannot be recovered.
