@@ -37,7 +37,9 @@ export const SIDEBAR: Sidebar = {
       { text: 'docker', link: 'en/installation-with-docker' },
       { text: 'docker-compose', link: 'en/installation-with-docker-compose' },
       { text: 'Render.com ', link: 'en/installation-with-render' },
+      { text: 'fly.io', link: 'en/installation-with-fly-io' },
     ],
+    Database: [{ text: 'litestream', link: 'en/configure-litestream-backup' }],
     Contribution: [{ text: 'development', link: 'en/development' }],
   },
 }
