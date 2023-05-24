@@ -1,0 +1,49 @@
+---
+title: 'Field Types'
+---
+
+## Base
+
+**Basic table field types are the different data types that can be stored in a table, such as text, numbers, and dates, and are used to classify and manage data effectively.**
+
+| Field type |                                                                                                                                Description |
+| ---------- | -----------------------------------------------------------------------------------------------------------------------------------------: |
+| String     |                                                                               The String field type stores text values of varying lengths. |
+| Email      |                                                                        The email field type in a table is used for storing email addresses |
+| Attachment |        The attachment field type in a table is used for storing files, such as documents or images, that are related to a specific record. |
+| Color      | The Color field type in a table helps identify and group related records, and can be used for visualizing data and customization purposes. |
+| Bool       |              Booleans have only two options, like "True" or "False", and are useful for indicating binary data such as fulfillment status. |
+| Number     |                                                 Number field type stores numbers and is handy for math operations, filtering, and sorting. |
+| Rating     |                             Rating field collects user opinions with a scale (e.g. 1-10 stars) for analyzing satisfaction and preferences. |
+| Date       |                                           Date field schedules and tracks time by storing and displaying deadlines, due dates, and events. |
+| Date Range |                                                                 Date Range field tracks project duration in a table for sorting/filtering. |
+| Select     |                                                         Select field provides drop-down menu for precise data selection and easy analysis. |
+
+## System
+
+**The system field in a Smartsheet functions to record system information, including the creation and modification times, the creator and modifier's names, etc. Users can check this field to get insights into the creation, modification history, and other related system information of a sheet.**
+
+| Field Types   |                                                                                                      Description |
+| ------------- | ---------------------------------------------------------------------------------------------------------------: |
+| AutoIncrement | AutoIncrement field in Smartsheet automatically assigns unique numbers to new rows and can't be manually edited. |
+| Collaborator  |                                        Assign collaborators by selecting names from a list of workspace members. |
+
+## Reference
+
+| Field Types |                                                                                              Description |
+| ----------- | -------------------------------------------------------------------------------------------------------: |
+| reference   |                                   Reference column links Smartsheet sheets for sharing and syncing data. |
+| Tree        | Smartsheet's Tree column supports hierarchical row organization with summary totals and multiple levels. |
+
+**You can refer to [Reference fields](./reference-fields) for information on how to use Reference field types.**
+
+## Lookup
+
+| Field Types |                                                                 Description |
+| ----------- | --------------------------------------------------------------------------: |
+| Lookup      |     You can look for a specific field in a linked row using a lookup field. |
+| Count       |           Used to calculate the number of elements in a list or collection. |
+| Sum         |                    Used to calculate the total of a list or set of numbers. |
+| Average     | A function used to calculate the average value of a list or set of numbers. |
+
+**Learn more about [Lookup fields](./lookup-fields)**
