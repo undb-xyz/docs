@@ -11,29 +11,25 @@ Tables Overview
 
 ## Create Table
 
-- When you first enter Undb, you can click the 'create table' button in the middle of the interface.
+- Click the 'create table' button.
 
 ![create-new-table](/images/create-new-table.png)
 
-- Fill in the table's name in the drawer that pops up on the right side of the screen.
+- Fill in the name of the table in the Create New Table pop-up
 
-![create-new-table-2](/images/create-new-table-2.png)
+- Finally, click the "Create New Table" button. After successful creation, the table view will be created and opened as a new view.
+
+![create-new-table-2](/images/create-new-table-2.gif)
 
 **_*Note: When creating a new table, it is necessary to create a column within the table. Clicking the "Create New Field" button will automatically create a new column.*_**
 
-- Finally, click the "create" button. After successful creation, the table view will be created and opened as a new tab.
-
 ## Rename Table
-
-**There are two ways for rename table**
-
-- Click on the dropdown button located to the right of the table name in the top navigation bar, and then select the 'Update Table' option.
 
 - Click on the settings icon located in the top right corner of the screen.
 
-**Rename the table in the 'Update Table' drawer on the right-hand side.**
+**Enter the new table name in the 'Update Table' pop-up window and click the 'Update Table' button at the bottom of the pop-up window to update the table name.**
 
-![rename-table](/images/rename-table.png)
+![rename-table](/images/rename-table.gif)
 
 **_Note that updating the table name does not update the name of any associated views._**
 
@@ -41,8 +37,26 @@ Tables Overview
 
 **There are two ways for delete table**
 
-- Click on the dropdown button located to the right of the table name in the top navigation bar, and then select the 'Delete Table' option
+- Click the Settings icon located in the upper right corner of the screen to open the Update Table pop-up window.
 
-- Click on the 'More' icon in the top-right corner of the 'Update Table' drawer, and then select the option to delete the table.
+- Click on the 'More' Icon in the upper right corner of the 'Update Table' pop-up window to bring up the More options and click on Delete Table to delete it.
+
+- Secondary confirmation to delete this table.
+
+![delete-table](/images/delete-table.gif)
 
 > Note that currently the deleted table cannot be recovered.
+
+## Import & Export
+
+**Import**
+
+- Click on the 'More' Icon to the right of the 'Create New Table' button in the bottom left corner, select and click on 'Import CSV'.
+
+- Drag and drop the CSV file into the upload popup window or click on the upload popup window to select the local CSV file.
+
+- Finally click the 'Confirm' button.
+
+![import-csv](/images/Import-csv.gif)
+
+> You can select 'Use First Row as Headers' or 'Import Data' to control the imported table headers and data.

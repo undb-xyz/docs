@@ -11,10 +11,10 @@ title: 'Field configuration options'
 ![field-configuration-options](/images/field-configuration-options.png)
 
 - Update Field
-- Insert Left
-- Insert Right
+- Duplicate Field
 - Pin
 - Hide Field
+- Sort
 - Delete Field
 
 **_More types of fields are currently under development._**
