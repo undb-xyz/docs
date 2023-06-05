@@ -13,15 +13,8 @@ description: ''
 
 **This support article covers how to add a new field.**
 
-- To create a new field, you can click on the + button just after the last visible field at the end of the table. Next, select the field type and input a name to identify the field. Click Create.
+- To create a new field, you can click the '+' button in the action bar. Next, select the field type and enter a name to identify the field. Click Create.
 
-![crete-field](/images/create-field.png)
-![crete-field-2](/images/create-field-2.png)
-
-## Insert a new field
-
-**To add a new field, you can either use the '+' button at the end of the table or insert a new field between existing fields. You can select a field and either insert a new field to the left or right of that field. Learn more about reordering and moving fields.**
-
-![insert-field](/images/insert-field.png)
+![crete-field](/images/create-new-field.png)
 
 In Undb, each [field can be configured](./field-configuration-options.md) to fit your use case. You can sort, filter, and hide the columns in a particular view without affecting other views in the table.
