@@ -7,19 +7,10 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "format": "prettier -w .",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/solid-js": "^2.1.0",
-    "@types/node": "^18.0.0",
-    "astro": "^2.2.1",
-    "solid-js": "^1.4.3"
-  },
-  "devDependencies": {
-    "@types/html-escaper": "^3.0.0",
-    "html-escaper": "^3.0.3",
-    "prettier": "^2.8.7",
-    "prettier-plugin-astro": "^0.10.0"
+    "@astrojs/starlight": "^0.1.0",
+    "astro": "^2.5.0"
   }
 }
