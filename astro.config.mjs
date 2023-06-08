@@ -1,9 +1,37 @@
 import { defineConfig } from 'astro/config'
-import solidJs from '@astrojs/solid-js'
+import starlight from '@astrojs/starlight'
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [solidJs()],
-  site: `https://demo.undb.xyz`,
-  server: { port: 8080 },
+  integrations: [
+    starlight({
+      title: 'undb Docs',
+      logo: {
+        src: '/src/assets/logo.svg',
+      },
+      social: {
+        github: 'https://github.com/undb-xyz/undb',
+        discord: 'https://discord.gg/3rcNdU3y3U',
+        twitter: 'https://twitter.com/unified_undb',
+      },
+      sidebar: [
+        {
+          label: 'Installation',
+          autogenerate: { directory: 'installation' },
+        },
+        {
+          label: 'Database',
+          autogenerate: { directory: 'database' },
+        },
+        {
+          label: 'Feature',
+          autogenerate: { directory: 'feature' },
+        },
+        {
+          label: 'Contribution',
+          autogenerate: { directory: 'contribution' },
+        },
+      ],
+    }),
+  ],
 })
