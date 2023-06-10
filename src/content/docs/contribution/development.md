@@ -29,10 +29,12 @@ fnm use
 
 you can also use some other node version manager like [nvm](https://github.com/nvm-sh/nvm) or [n](https://github.com/tj/n) or [volta](https://volta.sh/)
 
-### Install dependencies
+### Bootstrap (Optional)
+
+If you are first time to run undb, you should run bootstrap script.
 
 ```bash
-pnpm install
+pnpm run bootstrap
 ```
 
 > note that if you are using some other node package manager like npm or yarn, it will throw an exeption
