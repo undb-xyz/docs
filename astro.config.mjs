@@ -28,6 +28,10 @@ export default defineConfig({
           autogenerate: { directory: 'cache' },
         },
         {
+          label: 'Open API',
+          autogenerate: { directory: 'openapi' },
+        },
+        {
           label: 'Feature',
           autogenerate: { directory: 'feature' },
         },
