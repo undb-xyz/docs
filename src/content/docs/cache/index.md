@@ -1,5 +1,5 @@
 ---
-title: 'Cache Introduction'
+title: 'Introduction'
 description: 'learn how to config cache layer for undb'
 ---
 
@@ -7,5 +7,6 @@ description: 'learn how to config cache layer for undb'
 
 undb uses `in memory` cache by default while you can config following providers:
 
-- [redis](./1.redis/)
-- [file system](./2.fs/)
+- [redis](./1redis/)
+- [file system](./2fs/)
+- [mongoDB](./3mongodb/)
