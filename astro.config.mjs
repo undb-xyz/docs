@@ -24,6 +24,10 @@ export default defineConfig({
           autogenerate: { directory: 'database' },
         },
         {
+          label: 'Cache',
+          autogenerate: { directory: 'cache' },
+        },
+        {
           label: 'Feature',
           autogenerate: { directory: 'feature' },
         },
