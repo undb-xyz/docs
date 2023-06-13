@@ -7,5 +7,5 @@ description: "learn about open api intergration for created table"
 
 The UNdb provides you with the OpenAPI feature, which helps you to build and describe the design and functionality of REST APIs more easily, making it easier and more efficient to develop, manage, and use APIs.
 
-- [create OpenAPI](./1openAPI/)
+- [create Open API](./1openapi/)
 - [export](./2export/)
