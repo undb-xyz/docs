@@ -28,12 +28,16 @@ export default defineConfig({
           autogenerate: { directory: 'cache' },
         },
         {
+          label: 'Feature',
+          autogenerate: { directory: 'feature' },
+        },
+        {
           label: 'Open API',
           autogenerate: { directory: 'openapi' },
         },
         {
-          label: 'Feature',
-          autogenerate: { directory: 'feature' },
+          label: 'Webhook',
+          autogenerate: { directory: 'webhook' },
         },
         {
           label: 'Contribution',
