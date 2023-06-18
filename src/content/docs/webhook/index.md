@@ -1,6 +1,6 @@
 ---
 title: 'Introduction'
-description: 'learn about open api intergration for created table'
+description: 'learn about webhook intergration'
 ---
 
 ## Webhook Integration
