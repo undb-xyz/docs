@@ -9,6 +9,9 @@ export default defineConfig({
       logo: {
         src: "/src/assets/logo.svg",
       },
+      editLink: {
+        baseUrl: 'https://github.com/undb-xyz/docs/edit/main',
+      },    
       social: {
         github: "https://github.com/undb-xyz/undb",
         discord: "https://discord.gg/3rcNdU3y3U",
