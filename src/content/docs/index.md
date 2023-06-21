@@ -5,7 +5,7 @@ description: 'Docs intro'
 
 **Welcome to undb!**
 
-Private first, unified, self-hosted no code database.
+Private first, unified, self-hosted no code database. Requires only sqlite3 by default.
 
 ![undb](/undb.webp)
 
