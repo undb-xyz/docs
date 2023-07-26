@@ -27,7 +27,7 @@ undb suggest using [fnm](https://github.com/Schniz/fnm) to setup proper node ver
 fnm use
 ```
 
-you can also use some other node version manager like [nvm](https://github.com/nvm-sh/nvm) or [n](https://github.com/tj/n) or [volta](https://volta.sh/)
+you can also use some other node version manager like [nvm](https://github.com/nvm-sh/nvm) or [n](https://github.com/tj/n) or [volta](https://volta.sh/) or [pnpm](https://pnpm.io/cli/env)
 
 ### Bootstrap (Optional)
 
