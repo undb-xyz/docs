@@ -23,12 +23,33 @@ Next, we will guide you on how to create user-based record-level permission mana
 
 2. When creating a rule, you can set rule conditions. You can select a field in the table and set conditions for that field, then fill in the condition value. For example, selecting the "Deal" field and setting the condition as data starting with "Deal Name".
 
+**_Select the field_**
+![RLS](/images/rls-field.png)
+
+**_Choice of conditions_**
+![RLS](/images/rls-rule.png)
+
+**_Input data_**
+![RLS](/images/rls-rule-value.png)
+
 3. A rule can have multiple conditions, and the system will calculate the intersection between these conditions. For example, Condition 1: Selecting the "Deal" field and setting the condition as data starting with "Deal Name"; Condition 2: Selecting the "Stage" field and setting the condition as not equal to "Discovery" status. This rule will be the intersection of meeting Condition 1 and Condition 2.
 
-4. After filling in the setup information, you must click the "Create New Record-Level Security Rule" button to complete the creation.
+![RLS](/images/rls-rules.png)
+
+> **The conditions in a rule take effect in the order they are listed, with each condition being evaluated based on its position in the rule and the matching criteria.**
+
+4. After filling in the setup information, you must click the "Create New Record-Level Security" button to complete the creation.
+
+![RLS](/images/rls-create.png)
 
 5. When modifying the information of an already created rule, you need to click the adjacent "Update Rule" button for the changes to take effect.
 
+![RLS](/images/rls-update.png)
+
 ## Data Display
+
+The following GIF demonstrates how to set the visibility of data so that it is only accessible to everyone when the field "Deal" contains the data "Deal Name 1".
+
+![RLS](/images/data-display-1.gif)
 
 ## Record operation authority
