@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Record Level Security"
 description: "learn about subscribe intergration for created table"
 ---
 
