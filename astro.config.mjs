@@ -3,6 +3,9 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
+  server: {
+    port: 3001,
+  },
   integrations: [
     starlight({
       title: "undb Docs",
@@ -10,8 +13,8 @@ export default defineConfig({
         src: "/src/assets/logo.svg",
       },
       editLink: {
-        baseUrl: 'https://github.com/undb-xyz/docs/edit/main',
-      },    
+        baseUrl: "https://github.com/undb-xyz/docs/edit/main",
+      },
       social: {
         github: "https://github.com/undb-xyz/undb",
         discord: "https://discord.gg/3rcNdU3y3U",
@@ -45,6 +48,10 @@ export default defineConfig({
         {
           label: "Subscribe",
           autogenerate: { directory: "subscribe" },
+        },
+        {
+          label: "Record Level Security",
+          autogenerate: { directory: "recordsecurity" },
         },
         {
           label: "Contribution",
