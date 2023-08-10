@@ -52,4 +52,40 @@ The following GIF demonstrates how to set the visibility of data so that it is o
 
 ![RLS](/images/data-display-1.gif)
 
+- Example 1:
+
+1. Open the table for which you want to set the data visibility.
+2. Identify a suitable field in the table that represents the record creator and updater. For example, you can use the "Create by" field and "Update by".
+3. Locate and click on the "Data Visibility" or similar option to set the data visibility rules.
+4. In the data visibility settings, select the "Creator" field and choose the "Equals" operator.
+5. In the value field, enter "wanshufen" (without quotes).
+6. Save the settings and close the data visibility settings.
+
+![RLS](/images/list-rls.png)
+
+The diagram illustrates the records that wanshufen user can access. These records are filtered based on the application's record level security rules to ensure that only the records relevant to the wanshufen user are visible to them.
+
+![RLS](/images/list-rls-2.png)
+
 ## Record operation authority
+
+ Undb provides record-level permissions for the following operations: List, View, Create, Update, and Delete. Let's explore each of these operation types in detail:
+
+### List
+
+The List operation controls the display of records in a data table. It functions similarly to the filtering feature in a grid view, allowing you to specify that only records that comply with the RLS (Row-Level Security) should be shown to a particular user.
+
+### View
+
+### Create
+
+The Create operation defines rules for data creation permissions. It enables you to specify what kind of data a user can create based on the defined rules. For example, you can set a creation rule where users can only create records with a specific status field, such as "New" "In Progress" or "Completed".
+
+### Update
+
+The Update operation, similar to Create and Delete, controls the user's permission to modify each individual record. It uses RLS rules to determine which rows a user can modify.
+
+### Delete
+ The Delete operation sets the permission for users to delete specific rows of records. It ensures that users can only delete the rows they are authorized to delete based on the RLS rules.
+
+
