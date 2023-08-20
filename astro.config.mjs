@@ -54,6 +54,10 @@ export default defineConfig({
           autogenerate: { directory: 'authorization' },
         },
         {
+          label: 'Member',
+          autogenerate: { directory: 'member' },
+        },
+        {
           label: 'Contribution',
           autogenerate: { directory: 'contribution' },
         },
