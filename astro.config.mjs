@@ -46,6 +46,10 @@ export default defineConfig({
           autogenerate: { directory: 'webhook' },
         },
         {
+          label: 'Integration',
+          autogenerate: { directory: 'integration' },
+        },
+        {
           label: 'Subscribe',
           autogenerate: { directory: 'subscribe' },
         },
